@@ -1,0 +1,54 @@
+.lp-scheduler {
+  color: #172033;
+  font:
+    14px/1.4 system-ui,
+    sans-serif;
+}
+.lp-scheduler__toolbar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.lp-scheduler__days {
+  overflow: auto;
+  border: 1px solid #cbd5e1;
+}
+.lp-scheduler__day {
+  border-right: 1px solid #cbd5e1;
+}
+.lp-scheduler__day h3 {
+  margin: 0;
+  padding: 8px;
+  font-size: 14px;
+}
+.lp-scheduler__slot {
+  border: 0;
+  border-top: 1px solid #e2e8f0;
+  background: white;
+  text-align: left;
+  color: #64748b;
+  font-size: 10px;
+  cursor: pointer;
+}
+.lp-scheduler__slot span {
+  pointer-events: none;
+}
+.lp-scheduler__event {
+  box-sizing: border-box;
+  overflow: hidden;
+  border: 1px solid white;
+  border-radius: 4px;
+  background: #1d4ed8;
+  color: white;
+  text-align: left;
+  cursor: pointer;
+  min-height: 0;
+}
+.lp-scheduler button:focus-visible,
+.lp-scheduler select:focus-visible {
+  outline: 3px solid #ea580c;
+  outline-offset: -3px;
+  z-index: 1;
+}
